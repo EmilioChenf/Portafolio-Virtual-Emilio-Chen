@@ -136,7 +136,7 @@ Configuracion recomendada:
 - Build command: `npm run build`
 - Publish directory: `dist`
 
-GitHub Pages esta configurado con GitHub Actions en `.github/workflows/deploy.yml`. Cada push a `main` ejecuta `npm ci`, genera el build y publica el contenido de `dist`.
+GitHub Pages esta configurado con GitHub Actions en `.github/workflows/deploy.yml`. Cada push a `main` ejecuta `npm ci`, genera el build y publica el contenido de `dist` en la rama `gh-pages`.
 
 Para Render como servicio Docker:
 
