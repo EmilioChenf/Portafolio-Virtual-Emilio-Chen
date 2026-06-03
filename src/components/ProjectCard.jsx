@@ -18,6 +18,29 @@ function ProjectCard({ project }) {
         <strong>Mi aporte principal</strong>
         <p>{project.contribution}</p>
       </div>
+      {project.learning && (
+        <div className="project-learning">
+          <strong>Aprendizajes del proyecto</strong>
+          <dl>
+            <div>
+              <dt>Problema resuelto</dt>
+              <dd>{project.learning.problem}</dd>
+            </div>
+            <div>
+              <dt>Reto tecnico</dt>
+              <dd>{project.learning.challenge}</dd>
+            </div>
+            <div>
+              <dt>Solucion implementada</dt>
+              <dd>{project.learning.solution}</dd>
+            </div>
+            <div>
+              <dt>Que aprendi</dt>
+              <dd>{project.learning.learned}</dd>
+            </div>
+          </dl>
+        </div>
+      )}
       <div className="project-actions">
         {project.repo ? (
           <a className="button secondary compact" href={project.repo} target="_blank" rel="noreferrer">

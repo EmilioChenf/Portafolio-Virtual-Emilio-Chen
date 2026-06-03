@@ -564,6 +564,7 @@ h1 span {
 }
 
 .tech-grid,
+.decisions-grid,
 .projects-grid,
 .workflow-grid {
   display: grid;
@@ -575,7 +576,12 @@ h1 span {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.decisions-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .tech-card,
+.decision-card,
 .project-card,
 .workflow-card {
   background: rgba(18, 34, 42, 0.68);
@@ -589,6 +595,7 @@ h1 span {
 }
 
 .tech-card:hover,
+.decision-card:hover,
 .project-card:hover,
 .workflow-card:hover {
   background: rgba(18, 34, 42, 0.88);
@@ -600,6 +607,21 @@ h1 span {
   min-height: 210px;
   padding: 1.2rem;
   animation-delay: var(--delay);
+}
+
+.decision-card {
+  min-height: 210px;
+  padding: 1.25rem;
+}
+
+.decision-card h3 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.15rem;
+}
+
+.decision-card p {
+  margin: 0.75rem 0 0;
 }
 
 .tech-card span,
@@ -667,18 +689,56 @@ h1 span {
   border-radius: 8px;
 }
 
-.contribution {
-  margin-top: auto;
+.contribution,
+.project-learning {
+  margin-top: 1rem;
   padding-top: 1rem;
   border-top: 1px solid var(--line);
 }
 
-.contribution strong {
+.project-learning {
+  margin-top: 1rem;
+}
+
+.contribution strong,
+.project-learning > strong {
   color: var(--text);
 }
 
 .contribution p {
   margin: 0.35rem 0 0;
+}
+
+.project-learning dl {
+  display: grid;
+  gap: 0.75rem;
+  margin: 0.85rem 0 0;
+}
+
+.project-learning dl,
+.project-learning dd {
+  padding: 0;
+}
+
+.project-learning div {
+  padding: 0.85rem;
+  background: rgba(201, 235, 232, 0.055);
+  border: 1px solid rgba(201, 235, 232, 0.1);
+  border-radius: 8px;
+}
+
+.project-learning dt {
+  color: var(--mint);
+  font-size: 0.74rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.project-learning dd {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .workflow-section {
@@ -1082,6 +1142,7 @@ h1 span {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .decisions-grid,
   .projects-grid,
   .workflow-grid {
     grid-template-columns: 1fr;

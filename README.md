@@ -23,6 +23,8 @@ El proyecto esta preparado para demostrar criterio tecnico en una evaluacion de 
 - Presentacion clara del perfil.
 - Proyectos con repositorios publicos.
 - Descripciones basadas en evidencia de los proyectos locales.
+- Decisiones tecnicas explicadas desde el uso real de cada tecnologia.
+- Aprendizajes por proyecto: problema, reto, solucion y aprendizaje.
 - Secciones responsive para movil, tablet y escritorio.
 - Codigo separado por componentes y datos reutilizables.
 - README con instrucciones de instalacion, ejecucion y publicacion.
