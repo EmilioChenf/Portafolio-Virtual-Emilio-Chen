@@ -2,6 +2,8 @@
 
 Landing page profesional de Emilio Chen, estudiante de Ingenieria en Ciencias de la Computacion y desarrollador web full-stack junior en Guatemala. El portafolio esta construido como SPA con React + Vite y presenta informacion personal, tecnologias, proyectos, forma de trabajo y contacto.
 
+Sitio publicado: https://emiliochenf.github.io/Portafolio-Virtual-Emilio-Chen/
+
 ## Tecnologias usadas
 
 - React
@@ -123,6 +125,12 @@ README.md
 - GitHub personal: https://github.com/EmilioChenf
 
 ## Publicacion
+
+URL publica:
+
+```text
+https://emiliochenf.github.io/Portafolio-Virtual-Emilio-Chen/
+```
 
 El portafolio esta listo para publicarse como sitio estatico en:
 
